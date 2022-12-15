@@ -18,11 +18,17 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 5%
+  padding-left: 10%;
+  padding-bottom: 10%;
+  padding-right: 10%;
 }
 
 nav {
   flex-basis: 2000px;
+}
+
+.logo {
+margin-top: 1%;
 }
 
 .nav_links a {
@@ -37,10 +43,138 @@ nav {
   display: flex;
   flex-shrink: 0;
   justify-content: flex-end;
-  padding: 0px 20px;
+  padding-left: 20px;
   transition: all 0.3s ease 0s;
 }
 
 .nav_links a:hover {
   color: orange;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  padding-left: 10%;
+  padding-top: 0;
+  padding-right: 10%;
+}
+
+.content {
+display: flex;
+flex-direction: column;
+}
+
+.item1 {
+  width: 350px;
+  text-align: left;
+  font-size: 48px;
+  color: white;
+}
+
+.item2 {
+width: 350px;
+color: white;
+text-align: left;
+}
+
+.item3 {
+  width: 100px;
+  height: 30px;
+  background-color: #ede47c;
+
+}
+
+.item3:hover {
+  background-color: orange;
+}
+
+.placeholder {
+  margin-left: 10px;
+  display: flex;
+  flex-basis: 500px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  padding: 75px;
+  display: flex;
+  color: white;
+  background-color: grey;
+}
+
+.item4 {
+  padding-top: 10%;
+  display: flex;
+  flex-basis: 400px;
+  flex-direction: row;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  padding-bottom: 10%;
+  border: 15px;
+  border-color: solid black;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+.container3 {
+  display: flex;
+  flex-direction: row;
+  padding-left: 10%;
+  padding-top: 0%;
+  padding-right: 10%;
+  
+
+
+}
+.item5 {
+display: flex;
+color: white;
+text-align: left;
+font-size: 36px;
+font-style: italic;
+}
+
+.container4 {
+  display: flex;
+  margin-top: 10%;
+  flex-direction: row;
+  padding-left: 10%;
+  padding-top: 0%;
+  padding-right: 10%;
+  margin-bottom: 10%;
+}
+
+.item6 {
+  display: flex;
+  color: white;
+  text-align: left;
+  background-color: #3882f6;
+  padding-bottom: 5%;
+  padding-top: 5%;
+  justify-content: flex-start
+  flex-wrap: wrap;
+  
+}
+
+.button2 {
+  background-color: #3882f6;
+  border-color: white;
+  text-align: center;
+  font-weight: 600;
+  width: 150px;
+  color: white;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.container5 {
+display: flex;
+background-color: white;
+justify-content: center;
+padding: 5%;
+margin-bottom: 5%
+margin-top: 5%;
 }
