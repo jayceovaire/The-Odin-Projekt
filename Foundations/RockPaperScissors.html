@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <title>Javalesson</title>
+  <script type="text/javascript">       
+  </script>
+  <script>
+    function playerWins() {
+      alert("Player Wins!")
+    }
+
+    function playerLoses() {
+      alert("Player Loses!")
+    }
+
+    function draw() {
+      alert("It's a Draw!")
+    }
+
+    function getPlayerSelection() {
+      let playerSelection = prompt("Rock, Paper, Scissors?");
+      playerSelection = playerSelection.toLowerCase();
+
+      if (playerSelection !== "rock" && playerSelection !== "paper" && playerSelection !== "scissors") {
+        alert("Invalid selection. Try again.");
+        return getPlayerSelection();
+
+      } else {
+        return playerSelection;
+      }
+    }
+
+    function getComputerSelection() {
+      let computerSelection = Math.floor(Math.random() * 3);
+      switch (computerSelection){
+        case 0: 
+            return "rock"
+        case 1:
+            return "paper"
+        case 2:
+            return "scissors"
+        default:
+            return "rock"
+      }
+    }
+
+    function playRound(playerSelection, computerSelection) {
+  if (playerSelection === computerSelection) {
+    draw();
+  } else if (playerSelection === "rock" && computerSelection === "scissors") {
+    playerWins();
+  } else if (playerSelection === "rock" && computerSelection === "paper") {
+    playerLoses();
+  } else if (playerSelection === "paper" && computerSelection === "rock") {
+    playerWins();
+  } else if (playerSelection === "paper" && computerSelection === "scissors") {
+    playerLoses();
+  } else if (playerSelection === "scissors" && computerSelection === "paper") {
+    playerWins();
+  } else if (playerSelection === "scissors" && computerSelection === "rock") {
+    playerLoses();
+  }
+}
+
+  
+    function game() {
+        
+        for (let i = 0; i < 5; i++) {
+           playerSelection = getPlayerSelection();
+           computerSelection = getComputerSelection();
+           playRound(playerSelection, computerSelection);
+  
+    }
+}
+  
+  let playerSelection = ''
+  let computerSelection = '' 
+  game();
+  </script>
+</head>
+<body>
+</body>            
+</html>
+
